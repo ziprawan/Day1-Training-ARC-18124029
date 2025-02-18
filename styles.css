@@ -30,6 +30,13 @@
   text-align: center;
 }
 
+.title-header {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 .image-header-container {
   display: flex;
   justify-content: center;
@@ -37,4 +44,17 @@
   border-radius: 0.375rem;
   overflow: hidden;
   box-shadow: 0 0 0 2px rgb(17 24 39 / 0.05);
+}
+
+/* Dark mode stuffs */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(17 24 39);
+    color: rgb(255 255 255);
+  }
+
+  .content-container {
+    background-color: rgb(31 41 55);
+  }
 }
